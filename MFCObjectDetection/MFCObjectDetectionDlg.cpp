@@ -318,6 +318,7 @@ void CMFCObjectDetectionDlg::distance_star(Mat& image, Mat& outimage)
 
 }
 
+//
 void CMFCObjectDetectionDlg::connected_components_stat(Mat& image) {
 
 	Mat matDisp_image = image;
@@ -493,6 +494,7 @@ void CMFCObjectDetectionDlg::connected_components_stat(Mat& image) {
 	}
 }
 
+//
 void CMFCObjectDetectionDlg::pro(Mat& image) //处理图像，所有处理过程均通过这个函数调用处理
 {
 	IplImage* src = cvLoadImage("D:\\Code\\VS2017_MFC_code\\MFCObjectDetection\\MFCObjectDetection\\res\\2.bmp", 0);//原彩色图像的二值化图像，用于转化通道处理
